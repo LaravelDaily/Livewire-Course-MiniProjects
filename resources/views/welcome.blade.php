@@ -12,10 +12,10 @@
                                 <a href="{{ route('dropdowns') }}">Dependent dropdowns</a>
                             </li>
                             <li>
-                                <a href="{{ route('dropdowns') }}">Dependent dropdowns</a>
+                                <a href="{{ route('parentchildren') }}">Parent-children form</a>
                             </li>
                             <li>
-                                <a href="{{ route('dropdowns') }}">Dependent dropdowns</a>
+                                <a href="{{ route('editmodal') }}">Edit modal</a>
                             </li>
                             <li>
                                 <a href="{{ route('dropdowns') }}">Dependent dropdowns</a>

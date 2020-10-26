@@ -42,6 +42,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('dropdowns') }}">{{ __('Dependent dropdowns') }}</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('parentchildren') }}">{{ __('Parent-children form') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('editmodal') }}">{{ __('Edit modal') }}</a>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProjectController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,13 +18,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('dropdown', function () {
-    return view('projects.dropdown');
-})->name('dropdowns');
-Route::post('dropdown', function () {
-    return request()->all();
-})->name('dropdowns.submit');
+Route::get('dropdown', [ProjectController::class, 'dropdowns'])
+    ->name('dropdowns');
+Route::post('dropdown', [ProjectController::class, 'postDropdowns'])
+    ->name('dropdowns.submit');
 
-Auth::routes();
+Route::get('parentchildren', [ProjectController::class, 'parentchildren'])
+    ->name('parentchildren');
+Route::post('parentchildren', [ProjectController::class, 'postParentchildren'])
+    ->name('parentchildren.submit');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('editmodal', [ProjectController::class, 'editmodal'])
+    ->name('editmodal');
