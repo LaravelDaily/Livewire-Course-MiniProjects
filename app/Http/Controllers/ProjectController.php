@@ -30,4 +30,9 @@ class ProjectController extends Controller
     {
         return view('projects.editmodal');
     }
+
+    public function autorefresh()
+    {
+        return view('projects.autorefresh');
+    }
 }

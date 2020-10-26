@@ -30,3 +30,6 @@ Route::post('parentchildren', [ProjectController::class, 'postParentchildren'])
 
 Route::get('editmodal', [ProjectController::class, 'editmodal'])
     ->name('editmodal');
+
+Route::get('autorefresh', [ProjectController::class, 'autorefresh'])
+    ->name('autorefresh');

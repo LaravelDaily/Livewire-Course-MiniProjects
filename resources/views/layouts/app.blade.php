@@ -48,6 +48,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('editmodal') }}">{{ __('Edit modal') }}</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('autorefresh') }}">{{ __('Auto Refresh') }}</a>
+                        </li>
                     </ul>
                 </div>
             </div>
