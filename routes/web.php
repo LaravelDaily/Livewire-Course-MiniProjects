@@ -33,3 +33,6 @@ Route::get('editmodal', [ProjectController::class, 'editmodal'])
 
 Route::get('autorefresh', [ProjectController::class, 'autorefresh'])
     ->name('autorefresh');
+
+Route::get('slug', [ProjectController::class, 'slug'])
+    ->name('slug');

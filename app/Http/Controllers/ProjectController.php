@@ -35,4 +35,9 @@ class ProjectController extends Controller
     {
         return view('projects.autorefresh');
     }
+
+    public function slug()
+    {
+        return view('projects.slug');
+    }
 }
